@@ -1,7 +1,5 @@
-from . import celery
+from .celery_app import app
 
-
-app = celery.app
 
 @app.task
 def add(x, y):
